@@ -16,11 +16,11 @@ config = {
             client: 'postgres',
             connection: {
                 //filename: path.join(__dirname, '/content/data/ghost.db')
-		host: 'ec2-54-83-43-49.compute-1.amazonaws.com',
-		user: 'ejxsdwxviwqrtq',
-		password: 'vS1GOpT9F68S151eK8ToqdNSyM' ,
-		database: 'd55es71adrk5og',
-		port: 5432
+		host: process.env.POSTGRES_HOST,
+		user: process.env.POSTGRES_USER,
+		password: process.env.POSTGRES_PASSWORD,
+		database: process.env.POSTGRES_DATABASE,
+		port: '5432'
             },
             debug: false
         },
