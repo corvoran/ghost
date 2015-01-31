@@ -1,1 +1,1 @@
-web: node index.js --production $PORT
+web: node index.js  $PORT
